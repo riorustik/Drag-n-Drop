@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="js-styles.css" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet"
+          href="styles/styles-first-drop.css"/>
+    <link rel="stylesheet"
+          href="styles/js-styles.css"/>
+    <link rel="stylesheet"
+          href="styles/styles-second-drop.css">
+    <link rel="stylesheet"
+          href="styles/checkbox-styles.css">
+    <link rel="stylesheet"
+          href="styles/global-styles.css">
     <title>Drag&Drop</title>
 </head>
 <body>
-<div>
+<header>
+    <input type="checkbox"
+           id="switch"/><label for="switch">Toggle</label>
+</header>
+<div class="first">
     <div class="row">
         <div class="col-header start">Начать</div>
         <div class="col-header progress">В процессе</div>
@@ -17,12 +30,28 @@
 
     <div class="row">
         <div class="placeholder">
-            <div class="item" draggable="true">Перетащи меня</div>
+            <div class="item"
+                 draggable="true">Перетащи меня
+            </div>
         </div>
         <div class="placeholder"></div>
         <div class="placeholder"></div>
     </div>
 </div>
-<script src="index.js"></script>
+<div class="second">
+    <div class="placeholder-w left">
+        <div class="item-w"
+             draggable="true"></div>
+        <div class="item-w"
+             draggable="true"></div>
+        <div class="item-w"
+             draggable="true"></div>
+        <div class="item-w"
+             draggable="true"></div>
+    </div>
+    <div class="placeholder-w right"></div>
+</div>
+<script type="module"
+        src="./js/index.js"></script>
 </body>
 </html>
